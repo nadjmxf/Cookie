@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #6e1e0f;
+}
+header {
+  display: block;
+  width: 100%;
+}
+.jumbotron {
+  font-size: 60px;
+  padding: 60px;
+  background-color: #6e1e0f;
+  text-align: center;
+  color: #d8dad4;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px; 
+}
+.jumbotron img {
+  max-height: 250px;
+  height: auto;
+  width: auto;
+}
+.jumbotron div p {
+  font-size: 20px;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2rem;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+  flex-shrink: 0;
+}
+nav {
+  background-color: #a16c63;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a{
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff6f5;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  margin-inline: auto;
+}
+nav a:hover{
+  font-weight: bold;
+  background-color: #fff6f5;
+  color: #6e1e0f;
+  padding: 5px;
+}
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.content-description {
+  flex: 1;
+}
+.content-description .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-top: 1rem;
+  background-color: #6e1e0f;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.content-description button:hover {
+  border: 3px solid #6e1e0f;
+  background-color: transparent;
+  color: #3d110d;
+}
+.content-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.content-image img {
+  width: 400px;
+  min-width: 250px;
+}
+#about {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  padding: 100px 20px;
+}
+.angled-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 850px;
+  background-color: #6e1e0f;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  z-index: 0;
+}
+#about .content-description {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: right;
+  padding: 30px;
+}
+#about .content-image {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  height: max-content;
+  margin-top: 150px;
+}
+#product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0.1rem;
+}
+.cards{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  flex: 0 0 1%;
+}
+#product button {
+  padding: 0.4rem 0.8rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-top: 1rem;
+  background-color: #6e1e0f;
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  align-items: center;
+}
+.content-split {
+  flex: 1;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.beside {
+  margin: 0;
+}
+aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  z-index: 200;
+}
+.social-media {
+  height: 100%;
+  display: flex;
+}
+.social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #6e1e0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.social-media li {
+  list-style-type: none;
+}
+.social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff6f5;
+  transition: all 0.1s ease-in-out;
+}
+.social-media li a:hover {
+  color: #ae9d9b;
+}
