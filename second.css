@@ -167,6 +167,9 @@ main {
   padding: 20px;
   flex: 0 0 1%;
 }
+.cards img {
+  max-height: 200px;
+}
 #product button {
   padding: 0.4rem 0.8rem;
   border: 3px solid transparent;
